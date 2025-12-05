@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY package.json .
 COPY package-lock.json .
-COPY server.js
+COPY server.js .
 COPY public/ ./public/
 
 RUN npm install --production
